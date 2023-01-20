@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  CSS  ------------------------------------------------------------------>
+    <link rel="stylesheet" href="/CSS/stylesheet.css" />
+    <title>DEVs Form</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div>
+      <h1>DEVs Form</h1>
+      <br />
+    </div>
+    <!-- Form -->
+    <form>
+      <fieldset class="group">
+        <!-- NAME -->
+        <div class="field">
+          <label for="fname"><strong>First Name</strong></label>
+          <input type="text" name="fname" id="name" required />
+        </div>
+        <!-- SURNAME -->
+        <div class="field">
+          <label for="sname"><strong>Surname</strong></label>
+          <input type="text" name="sname" id="surname" required />
+        </div>
+      </fieldset>
+      <!-- EMAIL -->
+      <div class="group">
+        <label for="email"><strong>Email</strong></label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <!-- Field of web development with 3 options 
+        of selectable buttons
+      (radio button) and class css "field" -->
+      <div class="field">
+        <label for="LevelPosition"><strong>Level Position</strong></label>
+        <label>
+          <input type="radio" name="devweb" value="frontend" checked />Front-end
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="backend" />Back-end
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="fullstack" />Fullstack
+        </label>
+      </div>
+    </form>
+  </body>
+</html>
