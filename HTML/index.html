@@ -4,50 +4,154 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--  CSS  ------------------------------------------------------------------>
+    <!--  CSS  --->
     <link rel="stylesheet" href="/CSS/stylesheet.css" />
-    <title>DEVs Form</title>
+    <title>Dev's Form</title>
   </head>
   <body>
     <!-- Header -->
-    <div>
-      <h1>DEVs Form</h1>
+    <div class="container">
+      <h1 id="titl">Software Developer Form</h1>
+
       <br />
-    </div>
-    <!-- Form -->
-    <form>
-      <fieldset class="group">
-        <!-- NAME -->
+
+      <!-- Form -->
+      <form>
+        <fieldset class="group">
+          <!-- NAME -->
+          <div class="field">
+            <label for="fname"><strong>First Name</strong></label>
+            <input type="text" name="fname" id="name" required />
+          </div>
+          <!-- SURNAME -->
+          <div class="field">
+            <label for="sname"><strong>Surname</strong></label>
+            <input type="text" name="sname" id="surname" required />
+          </div>
+        </fieldset>
+        <!-- EMAIL -->
         <div class="field">
-          <label for="fname"><strong>First Name</strong></label>
-          <input type="text" name="fname" id="name" required />
+          <label for="email"><strong>Email</strong></label>
+          <input type="email" name="email" id="email" required />
         </div>
-        <!-- SURNAME -->
-        <div class="field">
-          <label for="sname"><strong>Surname</strong></label>
-          <input type="text" name="sname" id="surname" required />
-        </div>
-      </fieldset>
-      <!-- EMAIL -->
-      <div class="group">
-        <label for="email"><strong>Email</strong></label>
-        <input type="email" name="email" id="email" required />
-      </div>
-      <!-- Field of web development with 3 options 
+        <!-- Field of web development with 3 options 
         of selectable buttons
       (radio button) and class css "field" -->
-      <div class="field">
-        <label for="LevelPosition"><strong>Level Position</strong></label>
-        <label>
-          <input type="radio" name="devweb" value="frontend" checked />Front-end
-        </label>
-        <label>
-          <input type="radio" name="devweb" value="backend" />Back-end
-        </label>
-        <label>
-          <input type="radio" name="devweb" value="fullstack" />Fullstack
-        </label>
+        <div class="field">
+          <label for="Position"><strong>Position</strong></label>
+          <label>
+            <input
+              type="radio"
+              name="devweb"
+              value="frontend"
+              checked
+            />Front-end
+          </label>
+          <label>
+            <input type="radio" name="devweb" value="backend" />Back-end
+          </label>
+          <label>
+            <input type="radio" name="devweb" value="fullstack" />Fullstack
+          </label>
+        </div>
+        <!-- Seniority field with 3 options to choose from
+       (select option) and "field" class css -->
+        <div class="field">
+          <label for="Level"><strong>Level</strong></label>
+          <select id="Level" required>
+            <option selected disabled value="">Select</option>
+            <option>Junior</option>
+            <option>Middle</option>
+            <option>Senior</option>
+          </select>
+        </div>
+
+        <fieldset class="group">
+          <!-- 
+Field of technologies for choosing 1 or more options 
+to check (checkbox) and class css "field" -->
+          <div id="check">
+            <label><strong>Select the technologies you use:</strong></label
+            ><br /><br />
+            <input
+              type="checkbox"
+              id="technology"
+              name="technology1"
+              value="HTML"
+            />
+            <label for="technology">HTML</label>
+            <input
+              type="checkbox"
+              id="technology"
+              name="technology2"
+              value="CSS"
+            />
+            <label for="technology">CSS</label>
+
+            <input
+              type="checkbox"
+              id="technology"
+              name="technology3"
+              value="JAVASCRIPT"
+            />
+            <laber for="technology3">JAVASCRIPT</laber>
+
+            <input
+              type="checkbox"
+              id="technology"
+              name="technology4"
+              value="PYTHON"
+            />
+            <label for="technology4">PYTHON</label>
+
+            <input
+              type="checkbox"
+              id="technology"
+              name="technology5"
+              value="C#"
+            />
+
+            <label for="technology5">C#</label>
+
+            <input
+              type="checkbox"
+              id="technology"
+              name="technology6"
+              value="PHP"
+            />
+            <label for="technology6">PHP</label>
+
+            <input
+              type="checkbox"
+              id="technology"
+              name="technology7"
+              value="JAVA"
+            />
+            <label for="technology7">JAVA</label>
+          </div>
+        </fieldset>
+
+        <!-- Text Box -->
+
+        <div class="field">
+          <br />
+          <label for="experience"
+            ><strong>Tell us more about your experience:</strong></label
+          >
+          <textarea
+            rows="6"
+            style="width: 26em"
+            id="experience"
+            name="experience"
+          ></textarea>
+        </div>
+      </form>
+      <!-- Button -->
+      <div class="cont-button">
+        <div class="center">
+          <button class="button" type="submit" onsubmit="">Submit</button>
+        </div>
       </div>
-    </form>
+    </div>
   </body>
 </html>
